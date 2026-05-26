@@ -33,7 +33,7 @@ startBtn.addEventListener("click", () => {
 
 	namePlayer1.innerHTML = `${inputPlayer1.value || "Player 1"} matched: `;
 
-	namePlayer2.innerHTML = `${inputPlayer2.value || "Player 2"}hj matched: `;
+	namePlayer2.innerHTML = `${inputPlayer2.value || "Player 2"} matched: `;
 
 	controlBtns.remove();
 });
