@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Memory Game</title>
+	</head>
+	<body>
+		<div class="control-btns">
+			<form>
+				<div class="header">
+					<h2 class="game-name">Memory Game</h2>
+					<span class="dev-name">by: Ahmed AbdAli</span>
+				</div>
+				<div class="body">
+					<input class="input-player1" type="text" placeholder="Player 1" />
+					<input class="input-player2" type="text" placeholder="Player 2" />
+				</div>
+				<div class="footer start-btn">Start Game</div>
+			</form>
+		</div>
+
+		<div class="container">
+			<span class="current-turn">Player 1's Turn</span>
+			<div class="info-container">
+				<div>
+					<span class="name-player1">Player 1 matched: </span>
+					<span class="wins-player1">0</span>
+				</div>
+				<div>
+					<span class="name-player2">Player 2 matched: </span>
+					<span class="wins-player2">0</span>
+				</div>
+			</div>
+			<div class="blocks-container">
+				<div class="block" data-img="cat">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/cat.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="cat">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/cat.PNG" alt="img" />
+					</div>
+				</div>
+
+				<div class="block" data-img="cc">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/cc.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="cc">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/cc.PNG" alt="img" />
+					</div>
+				</div>
+
+				<div class="block" data-img="developer">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/developer.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="developer">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/developer.PNG" alt="img" />
+					</div>
+				</div>
+
+				<div class="block" data-img="dontouch">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/dontouch.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="dontouch">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/dontouch.PNG" alt="img" />
+					</div>
+				</div>
+
+				<div class="block" data-img="fire">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/fire.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="fire">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/fire.PNG" alt="img" />
+					</div>
+				</div>
+
+				<div class="block" data-img="git">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/git.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="git">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/git.PNG" alt="img" />
+					</div>
+				</div>
+
+				<div class="block" data-img="github">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/github.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="github">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/github.PNG" alt="img" />
+					</div>
+				</div>
+
+				<div class="block" data-img="hworld">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/hworld.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="hworld">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/hworld.PNG" alt="img" />
+					</div>
+				</div>
+
+				<div class="block" data-img="js">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/js.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="js">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/js.PNG" alt="img" />
+					</div>
+				</div>
+
+				<div class="block" data-img="vscode">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/vscode.PNG" alt="img" />
+					</div>
+				</div>
+				<div class="block" data-img="vscode">
+					<div class="face front"></div>
+					<div class="face back">
+						<img src="imgs/vscode.PNG" alt="img" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="end-game">
+			<div class="end-game-container">
+				<span class="winner-name"></span>
+				<span class="play-again-btn">Play Again</span>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
