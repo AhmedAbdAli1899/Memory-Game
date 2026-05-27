@@ -121,6 +121,7 @@ let winsPlayer2 = document.querySelector(".info-container .wins-player2");
 function checkMatchedBlocks(firstBlock, secBlock) {
 	//this func is used in flipBlock
 	if (firstBlock.dataset.img === secBlock.dataset.img) {
+		successSound.currentTime = 0;
 		successSound.play();
 
 		firstBlock.classList.remove("is-flipped");
@@ -143,6 +144,7 @@ function checkMatchedBlocks(firstBlock, secBlock) {
 			checkTheWinner();
 		}
 	} else {
+		failSound.currentTime = 0;
 		failSound.play();
 
 		setTimeout(() => {
